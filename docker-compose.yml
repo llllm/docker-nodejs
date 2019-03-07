@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  docker-nodejs:
+    image: docker-nodejs
+    build: .
+    environment:
+      NODE_ENV: development
+    ports:
+      - 8080:80
